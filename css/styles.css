@@ -15,7 +15,17 @@
     --color-white: #ffffff;
     --color-dairy: #fcfcfc;
 }
+
 /* Others */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
 .body {
     font-size: 16px;
@@ -92,12 +102,45 @@
     text-decoration: none;    
 }
 
+/* Resset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
 .list {
-    list-style: none;    
+    list-style: none;
+    padding: 0;
+    margin: 0;    
 }
 
 .span {
     color: var(--color-navy-blue);
+}
+
+.container {
+    width: 1128px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+
 }
 
 /* Header styles */
@@ -106,7 +149,8 @@
     
 }
 .header-nav {
-    
+    display: flex;
+    margin-right: auto;    
 }
 .header-logo {    
     font-family: "Raleway", sans-serif;
@@ -115,10 +159,18 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--color-iris);    
+    color: var(--color-iris);
+    margin-right: 76px;
+    padding: 25px 0;
+
     }
 
-.header-nav-list {
+.header-nav-list {    
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 24px 0;
+
 }
 
 .header-nav-list :hover,
@@ -137,8 +189,11 @@
     
 }
 
+.header-contact-link {
 
-.header-contact {      
+}
+
+.header-contact {
     font-style: normal; 
     font-size: 16px;
     line-height: 1.5;
@@ -147,11 +202,17 @@
 }
 
 .header-contact-mail {
-    color: var(--color-slate);
+    margin-right: 40px;
+    color: var(--color-slate);    
 }
 
 .header-contact-tel {
     color: var(--color-slate);
+}
+
+.contact-list {
+    display: flex;
+    padding: 24px 0;
 }
 
 .contact-list :hover,
