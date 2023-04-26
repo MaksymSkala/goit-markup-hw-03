@@ -82,8 +82,7 @@ html {
     color: var(--color-navy-blue);
 }
 
-.text-medium {
-    max-width: 264px
+.text-medium {    
     margin-bottom: 8px;
     font-size: 16px;       
     line-height: 1.5;
@@ -343,7 +342,8 @@ button {
 
 }
 .team-text-container {
-    padding: 32px 16px;    
+    padding: 32px 16px;
+    text-align: center;    
 }
 
 /* Footer section */
@@ -441,7 +441,7 @@ button {
     background-color: var(--color-ocean);
 }
 
-.accent-button {
+.accent-button {    
     background:  var(--color-ocean);
     min-width: 69px;
     min-height: 48px;
@@ -449,6 +449,7 @@ button {
     border-radius: 4px;
     border-width: 0;
     color: var(--color-white);
+    border: 1px solid var(--color-cornflower)
 }
 
 .accent-button:hover {
