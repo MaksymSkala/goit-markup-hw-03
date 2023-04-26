@@ -411,6 +411,7 @@ button {
     cursor: pointer;   
     color: var(--color-iris);
     background-color: var(--color-cloud);
+    border: 1px solid #e7e9fc;
 }
 
 .btn:hover,
