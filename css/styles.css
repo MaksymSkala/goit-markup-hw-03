@@ -83,6 +83,7 @@ html {
 }
 
 .text-medium {
+    max-width: 264px
     margin-bottom: 8px;
     font-size: 16px;       
     line-height: 1.5;
@@ -143,7 +144,7 @@ button {
 }
 
 .container {
-    max-width: 1128px;
+    width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
     
@@ -152,13 +153,13 @@ button {
 .header-container {
     display: flex;
     align-items: center;
-    width: 1158px;
+    
 }
 
 /* Header styles */
 
 .header {
-    border-bottom: 1px var(--color-cornflower)
+    border-bottom: 1px solid var(--color-cornflower)
 }
 
 .header-nav {
@@ -199,8 +200,8 @@ button {
     letter-spacing: 0.02em;    
 }
 .header-nav-link {
-    color: var(--color-grey);
-    
+    padding: 24px 0 24px;
+    color: var(--color-grey);      
 }
 
 .header-contact-link {
@@ -218,16 +219,19 @@ button {
 
 .header-contact-mail {
     margin-right: 40px;
+    padding: 24px 0 24px;
     color: var(--color-slate);    
 }
 
 .header-contact-tel {
+    padding: 24px 0 24px;
     color: var(--color-slate);
 }
 
 .contact-list {
     display: flex;
     padding: 24px 0;
+    gap: 40px;
 }
 
 .contact-list :hover,
@@ -326,7 +330,7 @@ button {
     background-color: var(--color-cloud);
 }
 .team-link {
-    gap: 24px;
+
 }
 
 .team-item {
@@ -339,23 +343,21 @@ button {
 
 }
 .team-text-container {
-    
-    text-align: center;
+    padding: 32px 16px;    
 }
 
 /* Footer section */
 
 .footer-container {
-    padding: 100px 156px;
+    
 }
 
-.footer-background {
+.footer {
+    padding: 100px 0;        
+    color: var(--color-cloud);
     background: var(--color-grey);
 }
 
-.footer {    
-    color: var(--color-cloud);    
-}
 .footer-logo { 
     padding: 0 0;
     display: inline-block;
@@ -396,7 +398,7 @@ button {
     min-height: 48px;
     padding: 12px 24px;
     border-radius: 4px;
-    border: 1px var(--color-cornflower)
+    border: 1px solid var(--color-cornflower)
     font-family: "Roboto", sans-serif;  
     font-weight: 500;
     font-size: 16px;
@@ -413,7 +415,7 @@ button {
 .btn:hover,
 .btn:focus {    
     background-color: var(--color-ocean);
-    border: 1px solid;
+    border: 1px solid transparent;
 }
 
 .btn:hover,
@@ -468,6 +470,13 @@ button {
 .section-title {
 }
 
+.portfolio-section {
+    padding: 32px 16px;
+    border-top: none;
+    border: 1px solid var(--color-cornflower)
+
+}
+
 .portfolio-item {
     width: calc((100% - 48px) / 3);
 }
@@ -478,9 +487,9 @@ button {
 /* Card set */
 
 .card-set {
+    gap: 24px;
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--indent);
+    flex-wrap: wrap;    
 }
 
 .card-set-item {
