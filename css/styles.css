@@ -443,14 +443,9 @@ button {
 }
 
 .accent-button {    
-    background:  var(--color-ocean);
-    min-width: 69px;
-    min-height: 48px;
-    padding: 12px 24px;
-    border-radius: 4px;
-    border-width: 0;
+    background:  var(--color-ocean);  
     color: var(--color-white);
-    border: 1px solid var(--color-cornflower)
+    
 }
 
 .accent-button:hover {
@@ -472,9 +467,11 @@ button {
 .section-title {
 }
 
-.portfolio-section {
+.portfolio-list-container {
     padding: 32px 16px;
-    border-top: none;
+}
+.portfolio-section {
+    
     border: 1px solid var(--color-cornflower)
 
 }
