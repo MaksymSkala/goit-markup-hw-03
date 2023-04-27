@@ -410,7 +410,7 @@ button {
     cursor: pointer;   
     color: var(--color-iris);
     background-color: var(--color-cloud);
-    border: 1px solid #e7e9fc;
+    border: 1px solid var(--color-cornflower);
 }
 
 .btn:hover,
@@ -440,7 +440,8 @@ button {
 
 .accent-button {    
     background:  var(--color-ocean);  
-    color: var(--color-white);    
+    color: var(--color-white);
+    border: 1px solid var(--color-cornflower);   
 }
 
 .accent-button:hover,
