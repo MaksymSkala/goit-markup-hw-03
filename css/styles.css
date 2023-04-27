@@ -443,8 +443,10 @@ button {
     color: var(--color-white);    
 }
 
-.accent-button:hover {
-    color: var(--color-grey);
+.accent-button:hover,
+.accent-button:focus {
+    color: var(--color-ocean);
+    background-color: var(--color-white);
     border: 1px solid transparent;
 }
 
