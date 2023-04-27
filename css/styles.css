@@ -435,17 +435,17 @@ button {
 .button :hover,
 .button :focus {
     color: var(--color-white);
-    background-color: var(--color-ocean);
+    background-color: var(--color-ocean);    
 }
 
 .accent-button {    
     background:  var(--color-ocean);  
-    color: var(--color-white);
-    
+    color: var(--color-white);    
 }
 
 .accent-button:hover {
     color: var(--color-grey);
+    border: 1px solid transparent;
 }
 
 /* Portfolio section */
