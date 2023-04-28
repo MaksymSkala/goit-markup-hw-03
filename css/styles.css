@@ -27,8 +27,7 @@ html {
     box-sizing: inherit;
 }
 
-.body {
-    min-width: 1128px;
+.body {    
     font-size: 16px;
     font-family: Roboto, sans-serif;        
     line-height: 1.5;
@@ -56,7 +55,8 @@ html {
     color: var(--color-white);
     }
 
-.section-title {    
+.section-title {  
+    margin-bottom: 72px;  
     font-size: 36px;
     font-weight: 700;    
     line-height: 1.11;
@@ -68,6 +68,7 @@ html {
 }
 
 .subtitle {
+    margin-bottom: 8px;
     border-top: none;    
     font-size: 20px;
     font-weight: 500;    
@@ -346,14 +347,15 @@ button {
 }
 
 .footer {           
-    color: var(--color-cloud);
+    
     background: var(--color-grey);
+    padding: 100px 0 100px 0;
 }
 
 .footer-logo { 
     padding: 0 0;
     display: inline-block;
-    margin: 100px 0 17px 0;  
+    margin-bottom: 16px;  
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
@@ -368,9 +370,8 @@ button {
 
 .footer-text {
     max-width: 264px;    
-    padding: 0 0 100px 0;
     margin: 0 0;
-    
+    color: var(--color-cloud);
 }
 
 /* Button section portfolio */
@@ -496,5 +497,6 @@ button {
 }
 
 .card-set-item {
-flex-basis: calc((100% - var(--indent) * var(--items) - 1)) / var(--items);
+    flex-basis: calc((100% - var(--indent) * var(--items) - 1)) / var(--items);
+    border-radius: 0px 0px 4px 4px;
 }
