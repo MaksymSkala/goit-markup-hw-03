@@ -47,13 +47,12 @@ html {
     text-transform: none;
 }
 .main-title-light { 
-    margin: 0;        
+    margin: 0 0 48px 0;        
     max-width: 496px;  
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    padding: 0 0 48px 0;
     color: var(--color-white);
     }
 
@@ -483,7 +482,7 @@ button {
 }
 
 .portfolio-section {  
-
+    display: block;
 }
 
 .portfolio-item {    
