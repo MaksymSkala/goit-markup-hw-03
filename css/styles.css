@@ -46,16 +46,19 @@ html {
     text-decoration: none;
     text-transform: none;
 }
-.main-title-light {         
+.main-title-light { 
+    margin: 0;        
     max-width: 496px;  
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    padding: 0 0 48px 0;
     color: var(--color-white);
     }
 
 .section-title {  
+    margin: 0;
     margin-bottom: 72px;  
     font-size: 36px;
     font-weight: 700;    
@@ -68,6 +71,7 @@ html {
 }
 
 .subtitle {
+    margin: 0;
     margin-bottom: 8px;
     border-top: none;    
     font-size: 20px;
@@ -79,7 +83,8 @@ html {
     color: var(--color-navy-blue);
 }
 
-.text-medium {       
+.text-medium {  
+    margin: 0;     
     font-size: 16px;       
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -110,18 +115,19 @@ html {
     --items: 4;
 
 /* Resset start */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
 p {
     margin: 0;
 }
 
 img {
     display: block;
+    margin: 0;    
 }
 
 button {
@@ -179,8 +185,6 @@ button {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 24px 0 24px;
-
 }
 
 .header-nav-list :hover,
@@ -465,27 +469,30 @@ button {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;    
+    row-gap: 48px;        
 }
 
 .section-title {
 }
 
 .portfolio-list-container {
-    padding: 32px 16px;
+    padding: 32px 16px;    
     border: 1px solid var(--color-cornflower);
-    border-top: none;
+    border-top: none;    
 }
-.portfolio-section {
-    
+
+.portfolio-section { 
+        
     border: 1px solid var(--color-cornflower)
 
 }
 
 .portfolio-item {
+    
     width: calc((100% - 48px) / 3);
 }
-.portfolio-img {    
+.portfolio-img {  
+    margin: 0;         
 }
 
 /* Card set */
@@ -498,5 +505,4 @@ button {
 
 .card-set-item {
     flex-basis: calc((100% - var(--indent) * var(--items) - 1)) / var(--items);
-    border-radius: 0px 0px 4px 4px;
 }
